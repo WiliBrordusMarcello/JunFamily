@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="id">
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <!--
+    Need a visual blank slate?
+    Remove all code in `styles.css`!
+  -->
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="script.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Desain Pakaian</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+   
+      <div class="logo">Desain Pakaian</div>
+        <label for="colorPicker">Pilih Warna:</label>
+        <input type="color" id="colorPicker" value="#ff0000">
+        <h1>Custom Desain Pakaian</h1>
+        <nav class="navbar">
+          <li><a href="index.html">Home</a></li>
+
+          <li><a href="desain.html">design</a></li>
+  
+        </nav>
+        
+    </header>
+
+    <!-- Tempat Custom Pakaian -->
+    <main>
+        <h2>Kustomisasi Pakaian Anda</h2>
+        <div class="customization">
+          <label for="colorPicker">Pilih Warna:</label>
+          <input type="color" id="colorPicker" value="#ff0000">
+
+            <div class="preview">
+                <img src="baju depan.png
+                " alt="Pratinjau Pakaian" id="preview-image">
+                <p>Pratinjau Desain Pakaian</p>
+            </div>
+
+            <div class="options">
+                <form>
+                    <label for="color">Pilih Warna:</label>
+                    <select id="color" onchange="updatePreview()">
+                        <option value="hitam">Hitam</option>
+                        <option value="putih">Putih</option>
+                        <option value="merah">Merah</option>
+                        <option value="biru">Biru</option>
+                    </select>
+
+                    <label for="size">Pilih Ukuran:</label>
+                    <select id="size">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                    </select>
+
+                    <label for="text">Tambahkan Teks (Opsional):</label>
+                    <input type="text" id="text" placeholder="Tulis teks di sini..." oninput="updateText()">
+
+                    <button type="button" onclick="confirmOrder()">Pesan Sekarang</button>
+                </form>
+            </div>
+        </div>
+        <div class="clothing-preview" id="clothingPreview">
+          <div class="shirt"></div>
+          </div>
+  
+    </main>
+
+    <!-- Footer -->
+    <footer id="kontak">
+        <p>Hubungi Kami: <a href="mailto:info@desainpakaian.com">info@desainpakaian.com</a></p>
+        <p>&copy; 2023 Custom Desain Pakaian. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
